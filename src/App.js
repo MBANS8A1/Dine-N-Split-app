@@ -20,7 +20,15 @@ const startingFriends = [
 ];
 
 function App() {
-  return <div className>Hello</div>;
+  return (
+    <div className>
+      <FriendsList />
+    </div>
+  );
+}
+
+function FriendsList() {
+  <ul></ul>;
 }
 
 export default App;
