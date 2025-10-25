@@ -24,3 +24,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.App {
+  min-height: 66vh;
+  display: grid;
+  grid-template-columns: 34rem 44rem;
+  column-gap: 4rem;
+  align-items: start;
+}
