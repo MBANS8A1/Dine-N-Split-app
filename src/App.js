@@ -21,7 +21,7 @@ const startingFriends = [
 
 function App() {
   return (
-    <div className>
+    <div className="app">
       <FriendsList />
     </div>
   );
