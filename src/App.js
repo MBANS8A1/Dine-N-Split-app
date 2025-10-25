@@ -30,7 +30,14 @@ function App() {
 }
 
 function FriendsList() {
-  <ul></ul>;
+  const friends = startingFriends;
+  return (
+    <ul>
+      {friends.map((friend) => (
+        <li>{friend.name}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default App;
