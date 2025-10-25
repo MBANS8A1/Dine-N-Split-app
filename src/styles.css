@@ -32,3 +32,12 @@ body {
   column-gap: 4rem;
   align-items: start;
 }
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}

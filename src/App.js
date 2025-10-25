@@ -22,7 +22,9 @@ const startingFriends = [
 function App() {
   return (
     <div className="app">
-      <FriendsList />
+      <div className="sidebar">
+        <FriendsList />
+      </div>
     </div>
   );
 }
