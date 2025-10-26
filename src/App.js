@@ -27,6 +27,7 @@ function App() {
         <FormAddFriend />
         <Button>Add friend</Button>
       </div>
+      <FormSplitBill />
     </div>
   );
 }
@@ -79,4 +80,11 @@ function FormAddFriend() {
   );
 }
 
+function FormSplitBill() {
+  return (
+    <form className="form-split-bill">
+      <h2>Split a bill with xPlaceholder </h2>
+    </form>
+  );
+}
 export default App;
