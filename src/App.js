@@ -27,7 +27,7 @@ function App() {
     <div className="app">
       <div className="sidebar">
         <FriendsList />
-        <FormAddFriend />
+        {showAddFriend && <FormAddFriend />}
         <Button>Add friend</Button>
       </div>
       <FormSplitBill />
