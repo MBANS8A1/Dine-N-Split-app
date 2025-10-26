@@ -89,7 +89,12 @@ function FormSplitBill() {
       <label htmlFor="your-value">🧍‍♂️Your expense</label>
       <input type="text" id="your-value" />
       <label htmlFor="friend-value">🧑‍🤝‍🧑X's expense</label>
-      <input type="text" id="friend-value" />
+      <input type="text" id="friend-value" disabled />
+      <label htmlFor="whopays">🤑Who is paying the bill?</label>
+      <select id="whopays">
+        <option value="user">You</option>
+        <option value="friend">X</option>
+      </select>
       <Button>Split bill</Button>
     </form>
   );
