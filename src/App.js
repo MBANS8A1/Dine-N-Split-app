@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const startingFriends = [
   {
     id: 118836,
@@ -20,6 +22,7 @@ const startingFriends = [
 ];
 
 function App() {
+  const [showAddFriend, setShowAddFriend] = useState(false);
   return (
     <div className="app">
       <div className="sidebar">
