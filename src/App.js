@@ -61,4 +61,13 @@ function Friend({ friend }) {
   );
 }
 
+function FormAddFriend() {
+  <form className="form-add-friend">
+    <label htmlFor="friend-text">🧑‍🤝‍🧑Friend name</label>
+    <input id="friend-text" type="text" />
+    <label htmlFor="friend-image">🌄Image HTML</label>
+    <input type="text" id="friend-image" />
+  </form>;
+}
+
 export default App;
