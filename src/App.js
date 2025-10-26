@@ -21,6 +21,10 @@ const startingFriends = [
   },
 ];
 
+function Button({ children,onClick }) {
+  return <button className="button">{children}</button>;
+}
+
 function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
   return (
@@ -28,7 +32,7 @@ function App() {
       <div className="sidebar">
         <FriendsList />
         {showAddFriend && <FormAddFriend />}
-        <Button>Add friend</Button>
+        <Button onClick={}>Add friend</Button>
       </div>
       <FormSplitBill />
     </div>
@@ -65,10 +69,6 @@ function Friend({ friend }) {
       <Button>Select</Button>
     </li>
   );
-}
-
-function Button({ children }) {
-  return <button className="button">{children}</button>;
 }
 
 function FormAddFriend() {
