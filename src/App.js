@@ -30,6 +30,7 @@ function Button({ children, onClick }) {
 }
 
 function App() {
+  const [friends, setFriends] = useState([startingFriends]);
   const [showAddFriend, setShowAddFriend] = useState(false);
 
   function handleShowAddFriend() {
@@ -51,7 +52,7 @@ function App() {
 }
 
 function FriendsList() {
-  const friends = startingFriends;
+  // const friends = startingFriends;
   return (
     <ul>
       {friends.map((friend) => (
