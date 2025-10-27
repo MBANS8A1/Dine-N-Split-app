@@ -52,6 +52,7 @@ body {
   transition: 0.5s;
 }
 
+.selected,
 .sidebar li:hover {
   background-color: var(--color-lightest);
 }
