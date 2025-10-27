@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendsList />
+        <FriendsList friends={friends} />
         {showAddFriend && <FormAddFriend />}
         <Button onClick={handleShowAddFriend}>
           {showAddFriend ? "Close" : "Add friend"}
@@ -51,8 +51,7 @@ function App() {
   );
 }
 
-function FriendsList() {
-  // const friends = startingFriends;
+function FriendsList({ friends }) {
   return (
     <ul>
       {friends.map((friend) => (
