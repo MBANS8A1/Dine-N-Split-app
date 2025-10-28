@@ -166,7 +166,11 @@ function FormSplitBill({ selectedFriend }) {
         type="text"
         id="your-value"
         value={paidByUser}
-        onChange={(e) => setPaidByUser(Number(e.target.value))}
+        onChange={(e) =>
+          setPaidByUser(
+            Number(e.target.value) > bill ? paidByUser : Number(e.target.value)
+          )
+        }
       />
 
       <label htmlFor="friend-value">🧑‍🤝‍🧑{selectedFriend.name}'s expense</label>
