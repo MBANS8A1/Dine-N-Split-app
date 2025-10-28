@@ -151,17 +151,36 @@ function FormSplitBill({ selectedFriend }) {
   return (
     <form className="form-split-bill">
       <h2>Split a bill with {selectedFriend.name} </h2>
+
       <label htmlFor="bill-value">💰Bill value</label>
-      <input type="text" id="bill-value" />
+      <input
+        type="text"
+        id="bill-value"
+        value={bill}
+        onChange={(e) => setBill(Number(e.target.value))}
+      />
+
       <label htmlFor="your-value">🧍‍♂️Your expense</label>
-      <input type="text" id="your-value" />
+      <input
+        type="text"
+        id="your-value"
+        value={paidByUser}
+        onChange={(e) => setPaidByUser(Number(e.target.value))}
+      />
+
       <label htmlFor="friend-value">🧑‍🤝‍🧑{selectedFriend.name}'s expense</label>
       <input type="text" id="friend-value" disabled />
+
       <label htmlFor="whopays">🤑Who is paying the bill?</label>
-      <select id="whopays">
+      <select
+        id="whopays"
+        value={whoIsPaying}
+        onChange={(e) => setWhoIsPaying(e.target.value)}
+      >
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
+
       <Button>Split bill</Button>
     </form>
   );
