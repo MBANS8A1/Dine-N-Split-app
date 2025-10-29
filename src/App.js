@@ -149,8 +149,13 @@ function FormSplitBill({ selectedFriend }) {
   const [paidByUser, setPaidByUser] = useState("");
   const paidByFriend = bill ? bill - paidByUser : "";
   const [whoIsPaying, setWhoIsPaying] = useState("user");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!bill || !paidByUser) return;
+  }
   return (
-    <form className="form-split-bill">
+    <form className="form-split-bill" onSubmit={handleSubmit}>
       <h2>Split a bill with {selectedFriend.name} </h2>
 
       <label htmlFor="bill-value">💰Bill value</label>
